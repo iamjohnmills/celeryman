@@ -61,7 +61,7 @@
 
     const duplicateWindow = (window,container,root) => {
       const rect = container.getBoundingClientRect();
-      createWindow(window,container.style.zIndex + 1,root,rect.left + 10,rect.top + 10);
+      createWindow(window,parseInt(container.style.zIndex) + 1,root,rect.left + 10,rect.top + 10);
     }
 
     const flipWindow = (container) => {
@@ -256,6 +256,7 @@
 
     const sequences = [
       { sequence: 'mozzarell', theme: 'a', title: 'Mozza-Rell', type: 'image', src: ['mozzarell-a.gif'] },
+      { sequence: 'mozzarell', theme: 'b', type: 'image', src: ['mozzarell-b.gif'] },
 
       { sequence: 'tayne', theme: 'a', type: 'mp4', loop: true, src: ['tayne-a-1.mp4','tayne-a-2.mp4','tayne-a-3.mp4'], title: 'TAYNE' },
       { sequence: 'tayne', theme: 'b', type: 'mp4', loop: true, src: ['tayne-b-1.mp4','tayne-b-2.mp4'] },
