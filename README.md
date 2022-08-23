@@ -1,4 +1,4 @@
-#### Celery Man Simulator
+# Celery Man Simulator
 
 Combine your favorite sequences and kick up the 4d3d3d3.
 
