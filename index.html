@@ -6,7 +6,7 @@
   <style>
     * { user-select: none; box-sizing: border-box; }
     html,body { width: 100%; height: 100%; margin: 0; background: #52c4c7; font-family: monospace; }
-    body:before { content: ''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; mix-blend-mode: overlay; background: url('rgb-scanlines-black.png'); opacity: 0.4; z-index: 0; }
+    body:before { content: ''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; mix-blend-mode: overlay; background: url('assets/rgb-scanlines-black.png'); opacity: 0.4; z-index: 0; }
     #windows { position: relative;  z-index: 1; }
 
     .border-right { border-right: 1px solid rgba(0,0,0,0.4); }
@@ -255,22 +255,22 @@
     }
 
     const sequences = [
-      { sequence: 'mozzarell', theme: 'a', title: 'Mozza-Rell', type: 'image', src: ['mozzarell-a.gif'] },
+      { sequence: 'mozzarell', theme: 'a', title: 'Mozza-Rell', type: 'image', src: ['assets/mozzarell-a.gif'] },
 
-      { sequence: 'tayne', theme: 'a', type: 'mp4', loop: true, src: ['tayne-a-1.mp4','tayne-a-2.mp4','tayne-a-3.mp4'], title: 'TAYNE' },
-      { sequence: 'tayne', theme: 'b', type: 'mp4', loop: true, src: ['tayne-b-1.mp4','tayne-b-2.mp4'] },
-      { sequence: 'tayne', theme: 'a', class: 'tayne-logo', type: 'image', src: ['tayne-logo.png'] },
-      { sequence: 'tayne',  theme: 'a', controls: true, type: 'mp4', src: ['tayne-intro.mp4'] },
+      { sequence: 'tayne', theme: 'a', type: 'mp4', loop: true, src: ['assets/tayne-a-1.mp4','tayne-a-2.mp4','tayne-a-3.mp4'], title: 'TAYNE' },
+      { sequence: 'tayne', theme: 'b', type: 'mp4', loop: true, src: ['assets/tayne-b-1.mp4','tayne-b-2.mp4'] },
+      { sequence: 'tayne', theme: 'a', class: 'tayne-logo', type: 'image', src: ['assets/tayne-logo.png'] },
+      { sequence: 'tayne',  theme: 'a', controls: true, type: 'mp4', src: ['assets/tayne-intro.mp4'] },
 
-      { sequence: 'oyster', theme: 'a', type: 'image', src: ['oyster-smiling.jpeg'], title: 'Oyster Smiling' },
-      { sequence: 'oyster', theme: 'a', type: 'mp4', loop: true, src: ['oyster-a-1.mp4'], title: 'Oyster' },
-      { sequence: 'oyster', theme: 'b', type: 'mp4', loop: true, src: ['oyster-b-1.mp4','oyster-b-2.mp4'] },
+      { sequence: 'oyster', theme: 'a', type: 'image', src: ['assets/oyster-smiling.jpeg'], title: 'Oyster Smiling' },
+      { sequence: 'oyster', theme: 'a', type: 'mp4', loop: true, src: ['assets/oyster-a-1.mp4'], title: 'Oyster' },
+      { sequence: 'oyster', theme: 'b', type: 'mp4', loop: true, src: ['assets/oyster-b-1.mp4','oyster-b-2.mp4'] },
 
-      { sequence: 'celeryman', theme: 'a', type: 'mp4', loop: true, src: ['celery-man-a-1.mp4','celery-man-a-2.mp4','celery-man-a-3.mp4','celery-man-a-4.mp4'], title: 'Celery Man'  },
-      { sequence: 'celeryman', theme: 'b', type: 'mp4', loop: true, src: ['celery-man-b-1.mp4','celery-man-b-2.mp4','celery-man-b-3.mp4','celery-man-b-4.mp4'] },
+      { sequence: 'celeryman', theme: 'a', type: 'mp4', loop: true, src: ['assets/celery-man-a-1.mp4','celery-man-a-2.mp4','celery-man-a-3.mp4','celery-man-a-4.mp4'], title: 'Celery Man'  },
+      { sequence: 'celeryman', theme: 'b', type: 'mp4', loop: true, src: ['assets/celery-man-b-1.mp4','celery-man-b-2.mp4','celery-man-b-3.mp4','celery-man-b-4.mp4'] },
 
-      { sequence: 'paul', theme: 'b', type: 'image', src: ['paul-a.gif'], title: 'Paul' },
-      { sequence: 'paul', theme: 'b', type: 'image', src: ['paul-b.gif'], title: 'Paul' },
+      { sequence: 'paul', theme: 'b', type: 'image', src: ['assets/paul-a.gif'], title: 'Paul' },
+      { sequence: 'paul', theme: 'b', type: 'image', src: ['assets/paul-b.gif'], title: 'Paul' },
     ];
 
     const loadSequence = async (name) => {
@@ -291,7 +291,7 @@
         ] },
         { name: '* New Beta Sequence Available', onclick: () => { loadSequence('tayne'); createFlarhgunnstow() } },
       ]
-      createWindow({ theme: 'b', show_sequence_buttons: false, title: 'CincoID Generator 2.4', menu: menu, type: 'image', src: ['cinco-id-logo.jpeg'] }, 1, document.getElementById('windows'), 0, 0)
+      createWindow({ theme: 'b', show_sequence_buttons: false, title: 'CincoID Generator 2.4', menu: menu, type: 'image', src: ['assets/cinco-id-logo.jpeg'] }, 1, document.getElementById('windows'), 0, 0)
     }
 
     document.addEventListener('DOMContentLoaded',start)
